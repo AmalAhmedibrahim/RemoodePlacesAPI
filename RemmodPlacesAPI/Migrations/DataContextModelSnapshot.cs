@@ -16,16 +16,18 @@ namespace RemmodPlacesAPI.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024");
 
-            modelBuilder.Entity("RemodePlacesAPI.Models.Reviews", b =>
+            modelBuilder.Entity("RemmodPlacesAPI.Models.User", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Name");
+                    b.Property<byte[]>("PasswordHash");
+
+                    b.Property<byte[]>("PasswordSalt");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("User");
                 });
 #pragma warning restore 612, 618
         }

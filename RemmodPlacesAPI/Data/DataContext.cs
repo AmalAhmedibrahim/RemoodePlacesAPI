@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RemodePlacesAPI.Models;
+using RemmodPlacesAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,7 @@ namespace RemodePlacesAPI.Data
         {
                 
         }
-      public  DbSet<Reviews> Reviews { get; set;  }
+        public DbSet<User> Users { get; set; }
+
     }
 }
