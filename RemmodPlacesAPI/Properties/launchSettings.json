@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/Reviews",
+      "launchUrl": "api/Auth",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "RemmodPlacesAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Reviews",
+      "launchUrl": "api/Auth",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RemmodPlacesAPI.Data
+namespace RemmodPlacesAPI.Interfaces
 {
-   public interface IAuthRepository
+    public interface IAuthRepository
     {
         Task<User> Register(User user, string PassWord);
         Task<User> Login(string userName, string PassWord);
